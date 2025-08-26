@@ -1,69 +1,21 @@
-/* @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-} */
-
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-} */
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Default light theme */
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
-/* Dark theme overrides (applied when <html class="dark">) */
+
 .dark {
   --background: #0a0a0a;
   --foreground: #ededed;
 }
 
-/* Apply variables to body */
+
 body {
   background-color: var(--background);
   color: var(--foreground);
@@ -71,7 +23,7 @@ body {
   @apply antialiased;
 }
 
-/* Optional: Use Tailwind utilities on body as a fallback */
+
 body {
   @apply bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100;
 }
